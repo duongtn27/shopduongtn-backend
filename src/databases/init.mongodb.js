@@ -3,7 +3,7 @@
 const mongoose = require('mongoose')
 const config = require('../configs/config')
 
-const connectString = `mongodb://${config.db.host}:${config.db.port}/${config.db.database}`
+const connectString = `mongodb://${config.db.host}:${config.db.port}/${config.db.name}`
 
 class Database {
     constructor() {
